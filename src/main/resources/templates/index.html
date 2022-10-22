@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            background: #04AA6D;
+        }
+        h1{
+            background: #f44336;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+
+<h1>Welcome to Home Page</h1>
+<form th:action="@{/login}" method="get">
+    <input type="submit" class="btn btn-info" value="Go_To_Login" />
+</form>
+
+<a th:href="@{/signup}" class="btn btn-primary">Sing up</a>
+</body>
+</html>
